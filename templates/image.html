@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image research</title>
+</head>
+<body>
+    <a href="{% url 'upload' %}"> Add other image</a>
+    
+    <div class="image">
+        <p>{{ image.file.name }}</p>
+        <img src="{{ image.file.url }}" style="max-width: 100%;">
+    </div>
+</body>
+</html>
