@@ -13,6 +13,23 @@
         <p>{{ image.file.name }}</p>
         <p>White pixel count: {{ white_count }}</p>
         <p>Black pixel count: {{ black_count }}</p>
+
+        
+        <div class="hex">
+            <div class="search">
+                <form action="#" method="GET">
+                    {{ form }}
+                    <input type="submit" value="Find">
+                </form>
+            </div>
+            
+            {% if hex_count %}
+                <div class="found">
+                    <p>Found {{ hex_count }} pixels for {{ hex_color }} color</p>
+                </div>
+            {% endif %}
+        </div>
+
         <img src="{{ image.file.url }}" style="max-width: 100%;">
     </div>
 </body>
