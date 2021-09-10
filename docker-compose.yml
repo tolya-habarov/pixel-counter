@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes: 
+      - .:/code
+    ports:
+      - 8000:8000
+
+  migrate:
+    build: .
+    command: python manage.py migrate
+    volumes:
+      - .:/code
+
+  test:
+    build: .
+    command: python manage.py test -v 2
+    volumes:
+      - .:/code
