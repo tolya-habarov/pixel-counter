@@ -1,0 +1,17 @@
+body,html {
+    height: 100%;
+  }
+
+img {
+  max-width: 80vw;
+  max-height: 70vh;
+  width: auto;
+}
+
+h3 {
+  margin-top: 10px;
+}
+
+.upload-form {
+  margin-top: 1rem;
+}

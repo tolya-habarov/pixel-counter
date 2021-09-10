@@ -14,7 +14,7 @@ class UploadImageForm(forms.ModelForm):
 
 class HexColorForm(forms.Form):
     hex_color = forms.CharField(
-        label='Hex color',
+        label='Hex color:',
         max_length=7,
         min_length=7,
     )
